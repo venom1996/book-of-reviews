@@ -10,7 +10,7 @@ function encryption($var) {
     return $var;
 }
 
-function addPost($name, $desc)      //Добавление сообщения
+function addPost($name, $desc)      //Добавление сообщений
 {
     global $dbz;
 
@@ -37,7 +37,7 @@ function addPost($name, $desc)      //Добавление сообщения
     return $res;
 }
 
-function SelectComent() {
+function SelectComent() {   //Вывод
     global $dbz;
  $post = array();
     $sql = "SELECT  name, description, date FROM post";
